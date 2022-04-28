@@ -1137,7 +1137,7 @@ a {
   #imagen_brujulaa1 {
     display: none; } }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 620px) {
   .section5 .texto__section5 p {
     font-size: 28px; }
   .section5 .img__section5 img {
@@ -1162,6 +1162,8 @@ a {
   .section6 .texto__section6 {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
     align-items: center;
     padding: 5rem 3rem 2rem 3rem; }
     .section6 .texto__section6 h2 {
@@ -1170,16 +1172,14 @@ a {
       font-weight: 500;
       color: #FFFFFF; }
     .section6 .texto__section6 p {
-      line-height: 34px;
+      line-height: 36px;
       font-size: 30px;
       font-weight: 400;
-      padding: 1rem 0 1rem 0;
       color: #FFFFFF;
       text-align: justify;
       padding: 1rem 4rem;
-      width: 60%; }
+      width: 80%; }
   .section6 .form__section6 {
-    margin-top: -500px;
     width: 100%;
     min-height: 65vh;
     display: flex;
@@ -1258,12 +1258,21 @@ a {
   z-index: 3; }
 
 #imagen_brujula1 {
-  margin-left: -1200px;
-  z-index: 3; }
+  position: absolute;
+  margin-left: -865px;
+  z-index: -1; }
 
-#imagen_brujula2 {
-  margin-top: -1500px;
-  margin-left: 2000px; }
+@media screen and (max-width: 1100px) {
+  #imagen_brujula1 {
+    display: none; } }
+
+@media screen and (max-width: 850px) {
+  .section6 .texto__section6 {
+    padding: 5rem 0rem 2rem; }
+    .section6 .texto__section6 p {
+      font-size: 26px; }
+  .section6 .form__section6 .wrap-form {
+    width: 80%; } }
 
 .section-insta {
   background-color: #FFFFFF;
