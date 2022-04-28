@@ -1,0 +1,133 @@
+.header {
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 6rem;
+    z-index: 1;
+    background: #FFFFFF;
+
+    .mobile-toggle {display: none;}
+
+        .nav__lista {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            letter-spacing: 1px;
+            justify-content: space-evenly;
+            padding-top: 1.5rem;
+
+            li a {
+                    text-align: center;
+                    text-decoration: none;
+                    color: $color-secundario;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding: 1rem;
+                    padding-bottom: 0.5rem ;
+                    position: relative;
+            }
+
+            li a::before {
+                content: '';
+                position: absolute;
+                width: 98%;
+                height: 2px;
+                border-radius: 4px;
+                background-color: $color-secundario;
+                bottom: 0;
+                left: 0;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform .3s ease-in-out;
+            }
+
+            li a:hover::before {
+                    transform-origin: left;
+                    transform: scaleX(1);
+            }
+                
+            .home__header {
+                    font-weight: 700, bold;
+                    size: 22px;
+            }            
+        }      
+}
+
+@media screen and (max-width: 1075px) {
+.header {
+        .nav__lista {
+                li a {
+                font-size: 16px;
+                line-height: 20px;
+                }
+        }                
+}
+}
+
+@media screen and (max-width: 920px) {
+        .header {
+                .nav__lista {
+                flex-direction: column;
+                letter-spacing: 1px;
+                justify-content: space-evenly;
+                padding: 5rem 2rem;
+
+                background: rgba(255, 0, 96, 0.27);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(2.4px);
+                -webkit-backdrop-filter: blur(2.4px);
+
+                text-align: end;
+                z-index: 1000;
+                transform: translateX(100%);
+                transition: transform 350ms ease-out;
+            
+                        li {
+                                padding: 1rem;
+
+                                a {
+                                        text-align: center;
+                                        text-decoration: none;
+                                        color: #FFFFFF;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        padding: 1rem;
+                                        padding-bottom: 0.5rem ;
+                                        position: relative;
+                                }
+                        }
+                }
+                
+                .nav__lista[data-visible="true"] {
+                        transform: translateX(0%);
+                }
+                
+                .mobile-toggle {
+                        display: block;
+                        position: absolute;
+                        border: 0;
+                        background-color: transparent;
+                        width: 2rem;
+                        aspect-ratio: 1;
+                        top: 2rem;
+                        right: 2rem;
+                        z-index: 999;
+                        cursor: pointer;
+
+                        .material-icons {
+                                color: $color-secundario;
+                                font-size: 36px;
+                                font-weight: bolder;
+                        }
+                }
+
+                .mobile-toggle[aria-expanded="true"] {
+                        color: #FFFFFF;
+                }
+        }
+}

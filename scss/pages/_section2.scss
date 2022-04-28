@@ -1,0 +1,63 @@
+// CORRIENTES TERAPÉUTICAS
+.section2{
+    background-color: #fff;
+    border-radius: 0px 260px 0px 260px;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+
+    .texto__section2 {
+        padding: 4rem 0 1rem ;
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            @include titulos-principales;
+            color: $color-principal;
+        }
+
+        p {
+            @include parrafos;
+        }
+    }
+
+    .cards__section2 {
+        color: $color-principal;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 4rem 0;
+
+        .each__card {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            width: 25rem;
+            height: 25rem;
+
+            h3 {
+                font-weight:500;
+                font-size: 30px;
+                line-height: 35px; 
+                color: $color-principal;
+            }
+
+            img {
+                width: 16rem;
+                height: 80%;  
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section2 {
+        .cards__section2 {
+            .each__card {
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+    }
+}

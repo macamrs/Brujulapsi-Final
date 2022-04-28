@@ -1,0 +1,141 @@
+// SECTION CONTACTO
+.section6 {
+    text-align: center;
+
+    .texto__section6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 3rem 2rem 3rem;
+
+        h2 {
+            @include titulos-principales;
+            color: #FFFFFF;
+        }
+
+        p {
+            @include parrafos;
+            color: #FFFFFF;
+            text-align: justify;
+            padding: 1rem 4rem;
+            width: 60%;
+        }
+    }
+
+    // FORMULARIO
+    .form__section6 {
+        margin-top: -500px;
+        width: 100%;
+        min-height: 65vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+            .wrap-form {
+                width: 55%;
+                background: #FFFFFF;
+                border-radius: 3rem;
+                overflow: hidden;
+                padding: 1.5rem;
+                box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25); 
+
+                form {
+                    width: 100%;
+                    
+                    .inputs__form {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        padding-bottom: 2rem;
+                        border: none;
+
+
+                        .areas__form {
+                            border-bottom: 2px solid $color-secundario;
+                        }
+
+                        input {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 24px;
+                            border: none;
+                            width: 82%;
+                            outline: none;
+                        }
+
+                        .material-icons {
+                            color: $color-secundario;
+                            vertical-align: sub;
+                            font-size: 30px;
+                            padding: 0.5rem;
+                        }
+                    }
+
+                    .mensaje textarea {
+                        background: #F8F8F8;
+                        border: none;
+                        width: 90%;
+                        padding: 1rem;
+                        border-bottom: 2px solid $color-secundario;
+                        outline: none;
+                        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+    }
+
+
+    .button__section6 {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        align-content: center;
+
+        button {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            border: 2px solid #EA068E;
+            box-sizing: border-box;
+            width: 123px;
+            height: 50px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            font-weight: 900;
+            font-size: 30px;
+            color: $color-secundario;
+            text-decoration: none;
+            transition: all .3s;
+            cursor: pointer;
+
+            &:hover {
+                background: $color-secundario;
+                color: #FFFFFF;
+            }
+        }
+
+    }
+}
+
+.solo_fondo_contacto{
+    background-color: #FFFFFF;
+    height: 200px;
+    // box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.solo_fondo_cont{
+    background-color: $color-principal;
+    height: 200px;
+    border-radius:  0px 0px 0px 200px;
+    box-shadow: inset 10px -10px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+}
+
+#imagen_brujula1{
+    margin-left: -1200px;
+    z-index: 3;
+}
+
+#imagen_brujula2{
+    margin-top: -1500px;
+    margin-left: 2000px;
+}

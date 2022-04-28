@@ -1,0 +1,99 @@
+// LOGO + FRASE
+.background0 {
+    background-color: #FFFFFF;
+    border-radius: 0% 0% 100% 100%;
+    box-shadow: 0px 10px 8px 5px rgba(0, 0, 0, 0.25);
+}
+
+.section0 {
+    display: flex;
+    justify-content: center; 
+    margin-top: 5rem;
+}
+
+.logo__section0 img {
+    width: 92%;
+}
+
+.texto__section0 {
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    align-self: center;
+
+    .comillas {
+        padding-left: 1rem;
+    }
+}
+
+.button__section0 {
+    @include button-azul;
+
+    a {
+        padding: 0.4rem 5rem;
+        box-sizing: border-box;
+        background-color: $color-principal;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        font-weight: 400;
+        font-size: 30px;
+        color: #FFFFFF;
+        transition: all .3s;
+
+        &:hover {
+            background: #FFFFFF;
+            color: $color-principal;
+        }
+    }
+
+   .material-icons {
+        font-size: 36px;
+        padding: 0.5rem;
+        vertical-align: sub;
+   } 
+}
+
+@media screen and (max-width: 850px) {
+    .section0 {    
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .logo__section0 {
+        display: contents;
+
+        img {
+            width: 70%;
+        }        
+    }
+
+    
+    .texto__section0 {
+        font-size: 30px;
+        line-height: 38px;
+        align-self: center;
+    
+        .comillas {
+            width: 2rem;
+            height: 2rem;
+            padding-left: 0.5rem;
+        }
+    }
+
+    .button__section0 {
+        a {
+            padding: 0.4rem 2rem;
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+    
+       .material-icons {
+            font-size: 30px;
+            padding: 0.5rem;
+       } 
+    }
+    
+}

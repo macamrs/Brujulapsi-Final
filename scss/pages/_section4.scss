@@ -1,0 +1,199 @@
+// TRATAMIENTOS
+.section4 {
+    padding: 8rem;
+    background-color: #FFFFFF;
+
+    h2 {
+        padding-bottom: 1rem;
+        @include titulos-principales;
+        color: $color-principal;
+    }
+
+    // TARJETAS
+
+    .terapias__section4 {
+        padding: 1rem 1rem 2rem 1rem;
+
+        .track-tarjetas__section4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 0.5rem;
+
+            .texto-tarjeta__section4 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem;
+                margin: 5px;
+                border-radius: 10px;
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+                width: 30%;
+                overflow: hidden;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    background-color: $color-principal;
+                    transform: scale(1.02);
+
+                    h3 {
+                        color: #FFFFFF;
+                        font-size: 32px;
+                    };
+
+                    p {
+                        font-size: 22px;
+                        color: #fff;
+                    }
+
+                    
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 29px;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: $color-principal;
+                    font-weight: 800, bolder;
+                    font-size: 30px;
+                    line-height: 35px;
+                    text-align: center;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+            }            
+        }
+    }
+
+    .target__section4 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 3rem 0 2rem 0;
+
+        .card__section4 {
+            img {
+                width: 90%;
+            }
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 56px;
+            color: #FFFFFF;
+        }
+    }
+
+    .moreinfo__section4 {
+        @include button-azul;
+
+        a {
+            padding: 0.5rem 5rem;
+            margin: 0 1rem;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: none;
+            width: 25%;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 35px;
+            background: #FFFFFF;
+            color: $color-principal;
+            text-decoration: none;
+            transition: all .3s;
+
+            &:hover {
+                background: $color-principal;
+                color: #FFFFFF;
+            }
+        }
+
+        .material-icons {
+            font-size: 36px;
+            padding: 1rem;
+            vertical-align: sub;
+        }
+    }
+}
+
+.solo_fondo_blanco_seccion4{
+    background-color: #FFFFFF;
+    height: 600px;
+}
+
+.solo_fondo_seccion4{
+    margin-top: -550px;
+    height: 500px;
+    border-radius: 0% 0% 100% 100%;
+    background-color: $color-principal;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+@media screen and (max-width: 1100px) {
+    .section4 {
+        padding: 3rem;
+
+        .terapias__section4 {
+            .track-tarjetas__section4 {
+                display: block;
+                padding-bottom: 0;
+
+                .texto-tarjeta__section4 {
+                    width: 100%;
+                    flex-direction: column;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section4 {
+        .target__section4 {
+            flex-wrap: nowrap;
+
+            .card__section4 img {
+                width: 70%;
+            }
+    
+            h2 {
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 56px;
+                color: #FFFFFF;
+            }
+        }
+
+        .moreinfo__section4 {
+    
+            a {
+                padding: 0.4rem 2rem;
+                width: 25%;
+                font-weight: 400;
+                font-size: 24px;
+            }
+    
+            .material-icons {
+                font-size: 30px;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .solo_fondo_seccion4{
+        margin-top: -410px;
+        height: 400px;
+        border-radius: 0% 0% 100% 100%;
+        background-color: $color-principal;
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+}

@@ -1,0 +1,43 @@
+// MINI INTRO
+.first {
+    overflow: hidden;
+    padding: 2rem;
+
+    .photo1{
+        margin-left: -200px;
+    }
+
+    .photo2 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+    } 
+}
+
+.section1 {
+    text-align: center;
+    background-color: $color-principal;
+    color: #FFFFFF;
+    width: 73%;
+    margin: 0 auto;
+
+    h1 {
+        margin-top: -445px; 
+        @include titulos-principales;
+        color: #FFFFFF;
+    }
+
+    p {
+        @include parrafos; 
+        text-align: justify;
+        padding: 4rem;
+    } 
+}
+
+@media screen and (max-width: 1350px) {
+    .first {
+        .photo2 {
+            display: none;
+        }
+    }
+}

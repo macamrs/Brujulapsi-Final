@@ -1,0 +1,177 @@
+#footer_principal{
+    background-color: #FFFFFF;
+    padding-bottom: 1rem;
+ }
+ 
+    .footer__index {
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+ }
+ 
+ .logo__footer {
+     padding: 0.8rem; 
+ 
+     img {
+         width: 14rem;
+         height: 92%;
+     }
+ }    
+ 
+ .redes__footer {
+     padding: 0.8rem;
+ 
+     h3 {
+         letter-spacing: 0.1rem;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 24px;
+         color: $color-principal;
+         text-align: center;
+         padding: 1rem;
+     }    
+ }
+ 
+ .iconos__footer {
+     display: inline-flex;
+ }
+ 
+ .iconos__footer .icon {
+     margin: 0 18px;
+     cursor:pointer;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     flex-direction:column;
+     position: relative;
+     z-index:2;
+ }
+ 
+ .iconos__footer .icon .material-icons {
+     color: #FFFFFF;
+     position: relative;
+     z-index: 2;
+     height: 60px;
+     width: 60px;
+     display: block;
+     background: $color-principal;
+     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+     border-radius: 50%;
+     text-align: center;
+     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+     font-size: 30px;
+     line-height: 58px;
+ }
+ 
+ .instagram .material-icons img {
+     height: 2rem;
+     width: 2rem;
+     fill: #FFFFFF;
+     fill-rule: evenodd;
+ }
+ 
+ .icon a {text-decoration: none;}
+ 
+ .iconos__footer .icon .tooltip {
+     text-align: center;
+     position:absolute;
+     top:0px;
+     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+     font-size: 14px;
+     padding: 10px 18px;
+     border-radius: 25px;
+     color: $color-principal;
+     opacity:0;
+     pointer-events: none;
+     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+ 
+ .iconos__footer .icon:hover .tooltip {
+     opacity:1;
+     pointer-events: auto;
+     top: 60px;
+ }
+ 
+ .iconos__footer .icon .tooltip::before {
+     position:absolute;
+     content:"";
+     height:15px;
+     width:15px;
+     bottom:-8px;
+     left:50%;
+     transform: translateX(-50%) rotate(45deg);
+ }
+ 
+ .iconos__footer .icon:hover .material-icons {
+     color: #FFFFFF;
+ }
+ 
+ .nav__footer {
+     list-style: none;
+     padding: 0.5rem;
+     
+     li {
+         padding: 1rem 0 0.5rem 0;
+ 
+         a {
+             letter-spacing: 0.1rem;
+             text-decoration: none;
+             font-weight: 400;
+             font-size: 22px;
+             line-height: 27px;
+             color: $color-principal;
+             padding: 0.5rem 0 0.5rem 0;
+             position: relative;
+ 
+             &::before {
+                 content: '';
+                 position: absolute;
+                 width: 98%;
+                 height: 2px;
+                 border-radius: 4px;
+                 background-color: $color-principal;
+                 bottom: 0;
+                 left: 0;
+                 transform-origin: right;
+                 transform: scaleX(0);
+                 transition: transform .3s ease-in-out;
+             }
+ 
+             &:hover::before {
+                     transform-origin: left;
+                     transform: scaleX(1);
+             }
+             
+         }       
+     }    
+ }
+ 
+ @media screen and (max-width: 855px) {
+     .footer__index {
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         align-items: center;
+     }
+ 
+     .redes__footer,
+     .nav__footer {
+         padding: 1.2rem;
+     }
+ }
+ 
+ //Colores del texto del footer de Modal2
+ #colores_footer{
+     h3{
+     color: #FFFFFF;}
+ }
+ 
+ #color_lista_footer{
+     a{
+     color: #FFFFFF;}
+ }
+ 
+ .icono_diferente{
+     background-color: #FFFFFF;
+ }

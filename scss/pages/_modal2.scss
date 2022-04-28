@@ -1,0 +1,289 @@
+.modal2__container {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal2 {
+        max-width: 100%;
+        max-height: 100%;
+        width: 80%;
+        height: 100%;
+        background: #0BA2E3;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: transform 1s;
+        transform: translateY(0%);
+        overflow: auto;
+        border-radius: 5%;
+        padding: 2rem 0 2rem 0;  
+
+        &::-webkit-scrollbar {display: none;} 
+     }    
+          
+    .modal2-close {
+        transform: translateY(-200%);            
+    }
+   
+}
+
+#brujula1enmodal{
+    margin-left: 1200px;
+    z-index: -5;
+}
+
+#brujula2enmodal{
+    margin-top: 400px;
+    margin-left: -50px;
+}
+
+.modal2 .close2 {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    font-weight: bolder;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    color: $color-secundario;
+}
+
+.modal2 .close2:hover {
+    color: #FFFFFF;
+    background-color: #d84d9e82;
+}
+
+// PRESENTACION
+.titulo__modal2 h2 {
+    margin-top: -500px;
+    margin-left: 150px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 50px;
+    padding-left: 1rem;
+    z-index: 10;
+    color: #FFFFFF;
+}
+
+.cards__modal2 {
+    margin-top: -900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{  text-decoration: none;
+    font-weight: bolder;
+    
+    .nombre_linkedin_1{
+        margin-top: -38px;
+        margin-left: 50px;
+        color: $color-principal;
+        
+    }
+}
+
+
+
+
+.card-presentacion1 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 3rem;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    display: flex;
+
+    .texto-general {
+        padding: 1.5rem 1rem;
+    }
+}
+
+.card-presentacion2 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 3rem;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    display: flex;
+
+    .texto-general {
+        padding: 1.5rem 1rem;
+    }
+}
+
+.card-general {
+    width: 80%;
+
+    img {
+        max-width: 15rem;
+        height: 100%;
+    }   
+    
+    h3 {
+        color: $color-principal;
+        font-weight: 800, bolder;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: justify;  
+        padding-bottom: 0.5rem;      
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: justify;
+        padding-bottom: 0.5rem;        
+    }
+
+    a img {
+        width: 3rem;
+        height: 3rem;
+        fill: #0E76A8;
+        padding-top: 0.5rem;
+    }
+}
+
+.texto-general .material-icons {
+    color: $color-principal;
+    font-size: 26px;
+    padding-right: 0.5rem;
+    vertical-align: text-bottom;
+}
+
+
+/* SECCION REVIEW */
+
+.reviews__modal2 {
+    background-color: #FFFFFF;
+    padding-bottom: 2rem;
+    border-radius: 0px 300px 0px 300px;
+    box-shadow: inset 0px 0px 10px 8px rgba(0, 0, 0, 0.117);
+
+    h2 {
+        font-size: 42px;
+        line-height: 50px;
+        color: $color-principal;
+        font-weight: 500;     
+        width: 50%;
+        padding-left: 5rem;
+        padding-top: 2rem;   
+    }
+
+    img {
+        opacity: 50%;
+        margin-top: 120px;
+        margin-left: 1200px;
+    }
+}
+
+.slider {
+    width: 90%;
+    height: 260px;
+    overflow: hidden;
+    margin: auto;
+
+    .slider-container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+
+        .slides__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            text-align: center;
+        }
+    }
+}
+
+.slides__body {
+    text-align: center;
+
+    .subtitle {
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        color: $color-principal;
+        text-transform: uppercase;
+        padding: 0.5rem;
+    }
+
+    .slider-review {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .estrellas {
+        .material-icons {
+            color: $color-principal;
+        }
+    }
+}
+
+//FOOTER
+
+.footer__modal2 {
+    background-color: $color-principal;
+
+    .footer__lista {
+        li a {
+                letter-spacing: 0.1rem;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27px;
+                color: $color-principal;
+                padding: 0.5rem 0 0.5rem 0;
+                position: relative;
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 98%;
+                    height: 2px;
+                    border-radius: 4px;
+                    background-color: #FFFFFF;
+                    bottom: 0;
+                    left: 0;
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    transition: transform .3s ease-in-out;
+                }
+    
+                &:hover::before {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                }
+                
+            }       
+        }
+    }
