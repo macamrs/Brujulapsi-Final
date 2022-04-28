@@ -300,3 +300,118 @@
         } 
     }
 }
+
+@media screen and (max-width: 600px) {
+    .fondo__colorPrincipal{
+        height: 395px;
+    }
+
+    .modal__container {
+        .modal1 {
+            width: 95%;
+        }
+    }
+
+    .textos__modal1 {
+        height: 454px;
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            width: 68%;
+            font-size: 18px;
+            line-height: 32px;
+        }        
+    }
+    
+    .terapia__modal1 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+
+        .material-icons {
+            font-size: 36px;
+            color: #FFFFFF;        
+        }
+    
+        h2 {
+            font-size: 36px;
+            line-height: 48px;    
+            display: inline-flex; 
+            padding-bottom: 1.5rem;
+        }
+    
+        .online__modal {  
+            flex-wrap: nowrap;
+            gap: 0;
+
+            p {
+                font-size: 16px;
+            }
+
+            .redes-terapia img {
+                width: 2rem;
+                height: 2rem;                
+            }
+
+            .redes-terapia {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+    .metodos__modal1 {
+        border-radius: 0;
+        box-shadow: inset 0px 0px 10px 8px rgba(0, 0, 0, 0.25);
+        background-color: #FFFFFF;
+    
+            h2 {
+                font-size: 28px;
+                line-height: 42px;
+            }
+    
+            p {
+                font-size: 18px;
+                line-height: 25px;
+            }
+    
+            .pagos__modal1 {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 0.5rem 0 0.5rem 0;
+            }
+    
+    }
+    
+    .metodo-pago img {
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .solo__fondo__para__sombra{
+        height: 510px;
+    }
+    
+    .honorarios__modal1 {
+        height: 490px;
+        border-radius: 0% 0% 100% 100%;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    
+        h2 {
+            font-size: 36px;
+        }
+    
+        p {
+            font-size: 19px;
+            line-height: 29px;  
+            padding-left: 0;
+        }
+    
+        .honorarios-texto {
+            width: 68%;
+        }
+    }
+}
