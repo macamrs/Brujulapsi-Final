@@ -276,6 +276,8 @@ body {
     line-height: 20px; } }
 
 @media screen and (max-width: 920px) {
+  body {
+    overflow-x: hidden; }
   .header {
     padding: 0; }
     .header .nav__lista {
@@ -869,7 +871,9 @@ a {
 @media screen and (max-width: 800px) {
   .section2 .cards__section2 .each__card {
     width: 18rem;
-    height: 18rem; } }
+    height: 18rem; }
+  .section2 .texto__section2 h2 {
+    font-size: 42px; } }
 
 .section____3 {
   height: 816px;
@@ -1084,9 +1088,9 @@ a {
     padding: 0.2rem 1rem;
     width: 25%;
     font-weight: 400;
-    font-size: 22px; }
+    font-size: 20px; }
   .section4 .moreinfo__section4 .material-icons {
-    font-size: 26px;
+    font-size: 24px;
     padding: 0.5rem; }
   .solo_fondo_seccion4 {
     margin-top: -410px;
@@ -1159,22 +1163,22 @@ a {
 
 @media screen and (max-width: 620px) {
   .section5 .texto__section5 p {
-    font-size: 28px; }
+    font-size: 26px; }
   .section5 .img__section5 img {
-    width: 24rem; }
+    width: 20rem; }
   .section5 .button__section5 {
     padding-top: 3rem;
     padding-bottom: 4rem;
     text-align: center;
     align-content: center; }
     .section5 .button__section5 a {
-      padding: 0.2rem 1.5rem;
+      padding: 0.2rem 1rem;
       border-radius: 10px;
       font-weight: 400;
-      font-size: 22px;
+      font-size: 18px;
       color: #FFFFFF; }
     .section5 .button__section5 .material-icons {
-      font-size: 26px;
+      font-size: 22px;
       padding: 0.5rem; } }
 
 .section6 {

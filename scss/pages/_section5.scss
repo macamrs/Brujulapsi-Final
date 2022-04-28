@@ -82,13 +82,13 @@
         .texto__section5 {
             
             p {
-                font-size: 28px;
+                font-size: 26px;
             }
         }
     
         .img__section5 {
             img {
-                width: 24rem;
+                width: 20rem;
             }        
         }
 
@@ -96,15 +96,15 @@
             @include button-azul;
     
             a {
-                padding: 0.2rem 1.5rem;
+                padding: 0.2rem 1rem;
                 border-radius: 10px;
                 font-weight: 400;
-                font-size: 22px;
+                font-size: 18px;
                 color: #FFFFFF;
             }
     
             .material-icons {
-                font-size: 26px;
+                font-size: 22px;
                 padding: 0.5rem;
             }
         }
