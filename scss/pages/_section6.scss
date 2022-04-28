@@ -148,6 +148,8 @@
 
 @media screen and (max-width: 850px) {
     .section6 {
+        padding-bottom: 2rem;
+
         .texto__section6 {
             padding: 5rem 0rem 2rem;
 
@@ -160,5 +162,9 @@
         .form__section6 {
             .wrap-form {width: 80%;}
         }        
+    }
+
+    .solo_fondo_contacto {
+        display: none;
     }
 }

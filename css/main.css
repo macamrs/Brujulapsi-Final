@@ -1291,12 +1291,16 @@ a {
     display: none; } }
 
 @media screen and (max-width: 850px) {
-  .section6 .texto__section6 {
-    padding: 5rem 0rem 2rem; }
-    .section6 .texto__section6 p {
-      font-size: 26px; }
-  .section6 .form__section6 .wrap-form {
-    width: 80%; } }
+  .section6 {
+    padding-bottom: 2rem; }
+    .section6 .texto__section6 {
+      padding: 5rem 0rem 2rem; }
+      .section6 .texto__section6 p {
+        font-size: 26px; }
+    .section6 .form__section6 .wrap-form {
+      width: 80%; }
+  .solo_fondo_contacto {
+    display: none; } }
 
 .section-insta {
   background-color: #FFFFFF;
