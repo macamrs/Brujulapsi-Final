@@ -88,7 +88,7 @@
     
         .img__section5 {
             img {
-                width: 26rem;
+                width: 24rem;
             }        
         }
 
@@ -96,15 +96,15 @@
             @include button-azul;
     
             a {
-                padding: 0.4rem 2rem;
+                padding: 0.2rem 1.5rem;
                 border-radius: 10px;
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 22px;
                 color: #FFFFFF;
             }
     
             .material-icons {
-                font-size: 30px;
+                font-size: 26px;
                 padding: 0.5rem;
             }
         }

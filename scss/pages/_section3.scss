@@ -90,3 +90,26 @@
 #brujula1{
     margin-left: -150px;
 }
+
+@media screen and (max-width: 600px) {
+    .section3 {
+        .titulo__section3 h2 {
+            font-size: 42px;
+        }
+
+        .carousel__section3 {
+            .carousel-track {
+                .each__card3 {
+                    width: 20rem;
+                    height: 19rem;
+            
+                    img {
+                        width: 16rem;
+                        height: 85%;
+                    }
+                }
+            }            
+        }
+
+    }
+}

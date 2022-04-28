@@ -157,33 +157,38 @@
 }
 
 @media screen and (max-width: 850px) {
-    .section4 {
+    .section4 { 
+        h2 {
+            font-size: 40px;
+        }
+
         .target__section4 {
             flex-wrap: nowrap;
+            flex-direction: column;
 
             .card__section4 img {
-                width: 70%;
+                width: 50%;
             }
     
             h2 {
                 font-weight: 500;
-                font-size: 32px;
+                font-size: 28px;
                 line-height: 56px;
-                color: #FFFFFF;
+                color: black;
             }
         }
 
         .moreinfo__section4 {
     
             a {
-                padding: 0.4rem 2rem;
+                padding: 0.2rem 1rem;
                 width: 25%;
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 22px;
             }
     
             .material-icons {
-                font-size: 30px;
+                font-size: 26px;
                 padding: 0.5rem;
             }
         }
