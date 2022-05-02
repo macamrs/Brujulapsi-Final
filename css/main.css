@@ -1091,7 +1091,7 @@ a {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      padding-bottom: 2.5rem; }
+      padding-bottom: 1rem; }
       .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4 {
         display: flex;
         flex-wrap: wrap;
