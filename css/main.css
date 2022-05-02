@@ -791,7 +791,7 @@ a {
 
 .slider {
   width: 90%;
-  height: 260px;
+  height: 290px;
   overflow: hidden;
   margin: auto; }
   .slider .slider-container {
@@ -813,18 +813,18 @@ a {
   text-align: center; }
   .slides__body .subtitle {
     font-weight: 900;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 29px;
     text-align: center;
     color: #0CA1E3;
     text-transform: uppercase;
-    padding: 0.5rem; }
+    padding: 0.4rem; }
   .slides__body .slider-review {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 29px;
     text-align: center;
-    padding: 0.5rem; }
+    padding: 0.4rem; }
   .slides__body .estrellas .material-icons {
     color: #0CA1E3; }
 

@@ -196,7 +196,7 @@ a{  text-decoration: none;
 
 .slider {
     width: 90%;
-    height: 260px;
+    height: 290px;
     overflow: hidden;
     margin: auto;
 
@@ -224,20 +224,20 @@ a{  text-decoration: none;
 
     .subtitle {
         font-weight: 900;
-        font-size: 25px;
+        font-size: 22px;
         line-height: 29px;
         text-align: center;
         color: $color-principal;
         text-transform: uppercase;
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 
     .slider-review {
         font-weight: 400;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 29px;
         text-align: center;
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 
     .estrellas {
