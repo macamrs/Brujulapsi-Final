@@ -44,9 +44,21 @@
 
 @media screen and (max-width: 450px) {
     .section1 {
+        width: 90%;
+
         p {
             font-size: 20px;
             padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section1 {
+        width: 80%;
+
+        p {
+            font-size: 22px;
         }
     }
 }

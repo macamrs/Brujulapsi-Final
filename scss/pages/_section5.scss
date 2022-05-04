@@ -80,9 +80,12 @@
 @media screen and (max-width: 620px) {
     .section5 {
         .texto__section5 {
+            h2 {
+                font-size: 42px;
+            }
             
             p {
-                font-size: 26px;
+                font-size: 25px;
             }
         }
     

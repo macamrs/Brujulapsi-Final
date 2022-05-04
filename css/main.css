@@ -212,7 +212,10 @@ body {
     align-items: center; }
   .redes__footer,
   .nav__footer {
-    padding: 1.2rem; } }
+    padding: 1.2rem; }
+  .iconos__footer .icon .material-icons {
+    height: 55px;
+    width: 55px; } }
 
 #colores_footer h3 {
   color: #FFFFFF; }
@@ -571,13 +574,14 @@ body {
   .modal__container .modal1 {
     width: 95%; }
   .textos__modal1 {
-    height: 454px; }
+    height: 470px; }
     .textos__modal1 h2 {
-      font-size: 28px; }
+      font-size: 28px;
+      margin-top: 16px; }
     .textos__modal1 p {
       width: 68%;
       font-size: 18px;
-      line-height: 32px; }
+      line-height: 30px; }
   .terapia__modal1 {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -939,9 +943,17 @@ a {
     display: none; } }
 
 @media screen and (max-width: 450px) {
-  .section1 p {
-    font-size: 20px;
-    padding: 1rem; } }
+  .section1 {
+    width: 90%; }
+    .section1 p {
+      font-size: 20px;
+      padding: 1rem; } }
+
+@media screen and (max-width: 800px) {
+  .section1 {
+    width: 80%; }
+    .section1 p {
+      font-size: 22px; } }
 
 .section2 {
   background-color: #fff;
@@ -1105,7 +1117,7 @@ a {
         transition: all 0.2s ease-out; }
         .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4:hover {
           background-color: #0CA1E3;
-          transform: scale(1.08); }
+          transform: scale(1.06); }
           .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4:hover h3 {
             color: #FFFFFF;
             font-size: 32px; }
@@ -1188,6 +1200,19 @@ a {
         margin: 10px; } }
 
 @media screen and (max-width: 850px) {
+  .section4 .terapias__section4 {
+    padding: 0; }
+    .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4 {
+      transition: none; }
+      .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4:hover {
+        background-color: #FFFFFF;
+        transform: none; }
+        .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4:hover h3 {
+          color: #0CA1E3;
+          font-size: 30px; }
+        .section4 .terapias__section4 .track-tarjetas__section4 .texto-tarjeta__section4:hover p {
+          font-size: 20px;
+          color: black; }
   .section4 h2 {
     font-size: 40px; }
   .section4 .target__section4 {
@@ -1281,8 +1306,10 @@ a {
     display: none; } }
 
 @media screen and (max-width: 620px) {
+  .section5 .texto__section5 h2 {
+    font-size: 42px; }
   .section5 .texto__section5 p {
-    font-size: 26px; }
+    font-size: 25px; }
   .section5 .img__section5 img {
     width: 20rem; }
   .section5 .button__section5 {
@@ -1413,9 +1440,11 @@ a {
   .section6 {
     padding-bottom: 2rem; }
     .section6 .texto__section6 {
-      padding: 5rem 0rem 2rem; }
+      padding: 5rem 0rem 2rem;
+      width: 100%; }
       .section6 .texto__section6 p {
-        font-size: 26px; }
+        font-size: 26px;
+        width: 100%; }
     .section6 .form__section6 .wrap-form {
       width: 80%; }
   .solo_fondo_contacto {
