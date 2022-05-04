@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 1100px) {
     .section4 {
-        padding: 3rem;
+        padding: 2rem;
 
         .terapias__section4 {
             .track-tarjetas__section4 {
@@ -161,6 +161,15 @@
             .track-tarjetas__section4 {
                 .texto-tarjeta__section4 {
                     transition: none;
+
+                    h3 {
+                        font-size: 28px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        text-align: center;
+                    }
     
                     &:hover {
                         background-color: #FFFFFF;
@@ -168,11 +177,11 @@
     
                         h3 {
                             color: $color-principal;
-                            font-size: 30px;
+                            font-size: 28px;
                         };
     
                         p {
-                            font-size: 20px;
+                            font-size: 18px;
                             color: black;
                         }  
                     }
