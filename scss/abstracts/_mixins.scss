@@ -1,8 +1,13 @@
 $color-principal: #0CA1E3;
 $color-secundario: #EF028B;
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: $color-principal;
+    position: relative;
 }
 
 *,
