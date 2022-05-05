@@ -17,7 +17,7 @@
     border-radius: 0% 0% 100% 100%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.226);
     background-color: #FFFFFF;
-    height: 350px;
+    height: 375px;
 
         h2 {
             font-weight: 500;
@@ -30,7 +30,7 @@
 
         p {
             font-weight: 400;
-            font-size: 26px;
+            font-size: 25px;
             line-height: 35px;
             text-align: justify;
             color: $color-principal;
@@ -134,11 +134,11 @@
 
 .solo__fondo__para__sombra{
     background-color: #FFFFFF;
-    height: 320px;
+    height: 370px;
 }
 
 .honorarios__modal1 {
-    height: 305px;
+    height: 360px;
     background: $color-principal;
     padding: 1rem;
     display: flex;
@@ -159,7 +159,7 @@
     p {
         font-weight: 400;
         color: #FFFFFF;
-        font-size: 26px;
+        font-size: 25px;
         line-height: 32px;
         text-align: justify;   
         padding-top: 0.5rem;
@@ -172,7 +172,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        width: 62%;
+        width: 63%;
     }
 }
 
@@ -301,7 +301,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 530px) {
     .fondo__colorPrincipal{
         height: 395px;
     }
@@ -322,7 +322,7 @@
 
         p {
             width: 68%;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 30px;
         }        
     }
@@ -374,7 +374,7 @@
             }
     
             p {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 25px;
             }
     
@@ -406,7 +406,7 @@
         }
     
         p {
-            font-size: 19px;
+            font-size: 16px;
             line-height: 29px;  
             padding-left: 0;
         }
@@ -415,4 +415,140 @@
             width: 68%;
         }
     }
+}
+
+@media screen and (min-width:530px) and (max-width: 810px) {
+    .fondo__colorPrincipal{
+        height: 380px;
+    }
+
+    .modal__container {
+        .modal1 {
+            width: 95%;
+        }
+    }
+
+    .textos__modal1 {
+        height: 410px;
+
+        h2 {
+            font-size: 30px;
+            margin-top: 16px;
+        }
+
+        p {
+            width: 70%;
+            font-size: 17px;
+            line-height: 30px;
+        }        
+    }
+    
+    .terapia__modal1 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+
+        .material-icons {
+            font-size: 36px;
+            color: #FFFFFF;        
+        }
+    
+        h2 {
+            font-size: 36px;
+            line-height: 48px;    
+            display: inline-flex; 
+            padding-bottom: 1.5rem;
+        }
+    
+        .online__modal {  
+            flex-wrap: nowrap;
+            gap: 1;
+
+            p {
+                font-size: 18px;
+            }
+
+            .redes-terapia img {
+                width: 3rem;
+                height: 3rem;                
+            }
+
+            .redes-terapia {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+    .metodos__modal1 {
+        border-radius: 0;
+        box-shadow: inset 0px 0px 10px 8px rgba(0, 0, 0, 0.25);
+        background-color: #FFFFFF;
+    
+            h2 {
+                font-size: 30px;
+                line-height: 42px;
+            }
+    
+            p {
+                font-size: 18px;
+                line-height: 25px;
+            }
+    
+            .pagos__modal1 {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 0.5rem 0 0.5rem 0;
+            }
+    
+    }
+    
+    .metodo-pago img {
+        width: 5rem;
+        height: 4rem;
+    }
+
+    .solo__fondo__para__sombra{
+        height: 440px;
+    }
+    
+    .honorarios__modal1 {
+        height: 420px;
+        border-radius: 0% 0% 100% 100%;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    
+        h2 {
+            font-size: 38px;
+        }
+    
+        p {
+            font-size: 18px;
+            line-height: 29px;  
+            padding-left: 0;
+        }
+    
+        .honorarios-texto {
+            width: 68%;
+        }
+    }
+}
+
+@media screen and (min-width:810px) and (max-width: 1400px) {
+    .fondo__colorPrincipal {height: 465px;}
+    .textos__modal1 {
+        height: 514px;
+
+        p {width: 75%;}
+    }
+    .honorarios__modal1 {
+        height: 410px;
+        
+        p {
+            font-size: 24px;
+        }
+
+        .honorarios-texto {width: 92%;}
+    }
+    
+    .solo__fondo__para__sombra {height: 415px;}
 }
